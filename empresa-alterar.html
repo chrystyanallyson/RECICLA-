@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Atualizar Cadastro</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800&display=swap" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+	<link rel="stylesheet" href="css/sobre.css"/>
+</head>
+<body>
+
+    <section id="top">
+		<header>
+			<div class="navbar-fixed nav-wrapper">
+	    <nav class="row">
+	    	<div class="col s8 m3 offset-m1">
+	    		<a href="index.html"><img class="logo" src="imagens/logosvg.svg" alt=""></a>
+	    	</div>
+	    	<div class="col s3 offset-s1 m7">
+	    		<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+	    		<ul class="right hide-on-med-and-down">
+					<li><a href="empresa-home.html" class="modal-trigger">HOME</a></li>
+					<li><a href="#" class="modal-trigger">USUARIO</a></li>
+					<li><a href="empresa-sobre.html" class="modal-trigger">SOBRE</a></li>
+					<li><a href='index.html'class="waves-effect waves-light btn blue">SAIR</a></li>
+       			
+	      	</ul>
+	    	</div>
+	    </nav>
+	  </div>
+	  <ul class="sidenav" id="mobile-demo">
+        <li><a href="empresa-home.html" class="modal-trigger">HOME</a></li>
+        <li><a href="#" class="modal-trigger">USUARIO</a></li>
+		<li><a href="empresa-sobre.html" class="modal-trigger">SOBRE</a></li>
+		<li><a href='index.html'class="waves-effect waves-light btn blue">SAIR</a></li>
+  	</ul>
+		</header>
+	</section><!--/section#top-->
+
+	<section id="info">
+
+		<div class="container center-align z-depth-1">
+        
+			<div class="col s8 offset-s2">
+				<div class="row">
+					<h2>Atualizar Cadastro</h2>
+					<P>Preencha todos os campos para atualizar seus dados:</P>
+				</div> 
+				<div class="row">
+					<div class="input-field col s6 offset-s3">
+						<i class="material-icons prefix">account_circle</i>
+						<input id="icon_prefix" type="text" class="validate">
+						<label for="icon_prefix">Digite seu nome</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s6 offset-s3">
+						<i class="material-icons prefix">phone</i>
+						<input id="icon_telephone" type="tel" class="validate">
+						<label for="icon_telephone">Telefone</label>
+					  </div>
+				</div>
+				<div class="row">
+					<div class="input-field col s6 offset-s3">
+						<i class="material-icons prefix">contact_mail</i> 
+						  <input id="email" type="email" class="validate">
+						  <label for="email">E-mail</label>
+						</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s6 offset-s3">  
+						<i class="material-icons prefix">location_on</i> 
+					  <input id="rua" type="text" class="validate">
+					  <label for="rua">Rua, Bairro, Número, UF, Cidade.</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s6 offset-s3">
+						<i class="material-icons prefix">location_searching</i> 
+						<input id="cep" type="text" class="validate">
+						<label for="cep">CEP</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s6 offset-s3"> 
+						<i class="material-icons prefix">lock_outline</i> 
+						<input id="senha" type="password" class="validate">
+					  	<label for="senha">Senha</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s6 offset-s3">
+						<a class="waves-effect waves-light btn blue">SALVAR</a>
+					</div>
+				</div>
+				<div class="row">
+					<p> </p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="footer">
+
+		<footer class="page-footer blue">
+			<div class="footer-copyright">
+			  <div class="container">
+			  © 2020 CACTUS TECHNOLOGY
+			  <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+			  </div>
+			</div>
+		</footer>
+
+	</section><!--/section#footer-->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script>
+		$(document).ready(function(){
+    	$('.slider').slider();
+  		});
+	</script>
+    <script src="js/auto.js"></script>
+</body>
+</html>

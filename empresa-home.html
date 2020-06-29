@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Home</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800&display=swap" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+	<link rel="stylesheet" href="css/sobre.css"/>
+</head>
+<body>
+
+    <section id="top">
+		<header>
+			<div class="navbar-fixed nav-wrapper">
+	    <nav class="row">
+	    	<div class="col s8 m3 offset-m1">
+	    		<a href="cliente-home.html"><img class="logo" src="imagens/logosvg.svg" alt=""></a>
+	    	</div>
+	    	<div class="col s3 offset-s1 m7">
+	    		<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+	    		<ul class="right hide-on-med-and-down">
+					<li><a href="empresa-home.html" class="modal-trigger">HOME</a></li>
+					<li><a href="empresa-alterar.html" class="modal-trigger">USUARIO</a></li>
+					<li><a href="empresa-sobre.html" class="modal-trigger">SOBRE</a></li>
+					<li><a href='index.html'class="waves-effect waves-light btn blue">SAIR</a></li>
+       			
+	      	</ul>
+	    	</div>
+	    </nav>
+	  </div>
+	  <ul class="sidenav" id="mobile-demo">
+        <li><a href="empresa-home.html" class="modal-trigger">HOME</a></li>
+        <li><a href="empresa-alterar.html" class="modal-trigger">USUARIO</a></li>
+		<li><a href="empresa-sobre.html" class="modal-trigger">SOBRE</a></li>
+		<li><a href='index.html'class="waves-effect waves-light btn blue">SAIR</a></li>
+  	</ul>
+		</header>
+	</section><!--/section#top-->
+	<section id="info">
+		<div class="row">
+			<div class="slider">
+				<ul class="slides">
+				  <li>
+					<img src="imagens/Reciclagem-Aluminio.jpg"> <!-- random image -->
+					<div class="caption center-align">
+					</div>
+				  </li>
+				  <li>
+					<img src="imagens/reciclagem-papel.jpg"> <!-- random image -->
+					<div class="caption left-align">
+					</div>
+				  </li>
+				  <li>
+					<img src="imagens/reciclagem-plastico.jpg"> <!-- random image -->
+					<div class="caption right-align">
+					</div>
+				  </li>
+				  <li>
+					<img src="imagens/reciclagem-vidro.jpg"> <!-- random image -->
+					<div class="caption center-align">
+					</div>
+				  </li>
+				</ul>
+			</div>
+		</div>
+		
+
+		<div class="container z-depth-1 center-align">
+			<div class="row">
+				<div class="col s12">
+					<h2>Solicitações</h2>
+					<section class="tabela">
+						<table>
+                            <thead>
+                                <tr class="tabela-interna">
+                                    <th>Codigo</th>
+                                    <th>Nome</th>
+                                    <th>Quantidade</th>
+                                    <th>Tipo</th>
+                                    <th>Valor</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+            
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Henrique</td>
+                                    <td>3</td>
+                                    <td>vidro</td>
+                                    <td>$1,90</td>
+                                    <td>$1,90</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Crystian</td>
+                                    <td>5</td>
+                                    <td>Metal</td>
+                                    <td>$3,00</td>
+                                    <td>$3,00</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>George</td>
+                                    <td>10</td>
+                                    <td>plastico</td>
+                                    <td>$1,00</td>
+                                    <td>$1,00</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Carlos</td>
+                                    <td>100</td>
+                                    <td>Papel</td>
+                                    <td>$0,90</td>
+                                    <td>$0,90</td>
+                                </tr>
+                            </tbody>
+                        </table>
+				</div>
+
+			</div>
+		</div>
+
+		  <div class="container">
+            <div class="row">
+				
+                <div class="col s6 z-depth-1 center-align">
+					<h2>COLETA</h2>
+            <P>Preencha todos os campos para confirmar sua coleta</P>
+				  <div class="row">
+					<div class="input-field inline">
+						<select>
+						  <option value="1">Papel</option>
+						  <option value="2">Aluminio</option>
+						  <option value="3">Plastico</option>
+						  <option value="4">Vidro</option>
+						</select>
+						<label>Tipo Do Material coletado</label>
+					  </div>
+					  <div class="input-field inline">
+						<input placeholder="Quantidade" id="Quantidade" type="text" class="validate">
+						<label for="Quantidade">Quantidade</label>
+					</div>
+				  </div>
+				  <div class="row">
+					<div class="input-field inline">
+						<input placeholder="Codigo" id="cd_coleta" type="text" class="validate">
+						<label for="cd_coleta">Codigo</label>
+					</div>
+					
+				
+				  </div>
+				  <div class="row">
+					<a class="waves-effect waves-light btn blue">Coletar</a>
+				  </div>
+				</div>
+                <div class="col s6 z-depth-1 center-align ">
+					<h2>FINANCEIRO</h2>
+					<P>Preencha todos os campos para gerar o boleto</P>
+                        <div class="row">
+                            <div class="input-field inline">
+                                <input placeholder="Codigo" id="Codigo" type="text" class="validate">
+                                <label for="Codigo">Codigo</label>
+                              </div>
+                        </div>
+						<div class="row">
+                            <p>Informe o codigo para que seja gerado o boleto do codigo informado</p>
+                            <p>Pague o boleto em ate 48hs</p>
+                        </div>
+					  <div class="row">
+						<a class="waves-effect waves-light btn blue">Gerar boleto</a>
+                      </div>
+                      
+					
+              	</div>
+		 	 </div>
+		  </div>
+ 
+			  
+		  </div>
+			
+
+	</section>
+	<section id="footer">
+
+		<footer class="page-footer blue">
+			<div class="footer-copyright">
+			  <div class="container">
+			  © 2020 CACTUS TECHNOLOGY
+			  <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+			  </div>
+			</div>
+		</footer>
+
+	</section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script>
+		$(document).ready(function(){
+    	$('.slider').slider();
+  		});
+	</script>
+    <script src="js/auto.js"></script>
+</body>
+</html>

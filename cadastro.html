@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Cadastro</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800&display=swap" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+	<link rel="stylesheet" href="css/layout.css"/>
+</head>
+<body>
+	<section id="top">
+		<header>
+		
+			<div class="navbar-fixed nav-wrapper">
+				<nav class="row">
+					<div class="col s8 m3 offset-m1">
+						<a href="index.html"><img class="brand-logo" src="imagens/logosvg.svg" alt=""></a>
+					</div>
+					<div class="col s3 offset-s1 m7">
+					
+						<ul class="right hide-on-med-and-down">
+							<li>
+								<div class="input-field col s12 ">
+									<input id="Email" type="text" class="validate">
+									<label for="Email">Email</label>
+								  </div>
+							</li>
+							 <li>
+								<div class="input-field col s12 ">
+								<input id="password" type="password" class="validate">
+								<label for="password">Password</label>
+								  </div>
+							</li>
+							 <li><a href="sistema.html" class="waves-effect waves-light btn blue darken-4">ENTRAR</a></li>
+							 <li><a href="sobre.html" class="modal-trigger blue-text">SOBRE</a></li>
+						   
+					  </ul>
+					</div>
+				</nav>
+			</div>
+		
+		</header>
+	</section><!--/section#top-->
+	<section id="info">
+		<div class="container center-align">
+			
+				<form class="col s12" action="#" name="formulario">
+					<div class="row">
+						<p> </p>
+					</div>
+				  <div class="row">
+					  <div class="col s6">
+						<p>
+							<label>
+							  <input name="group1" type="radio" checked />
+							  <span>Pessoa Juridica</span>
+							</label>
+						  </p>
+					  </div>
+					  <div class="col s6">
+						<p>
+							<label>
+							  <input name="group1" type="radio" />
+							  <span>Pessoa Fisica</span>
+							</label>
+						  </p>
+					  </div>
+					
+				  </div>
+				  <div class="row">
+					<div class="input-field col s6">
+					  <i class="material-icons prefix">account_circle</i>
+					  <input placeholder="Entre com o Nome" id="nome" type="text" class="validate">
+					  <label for="nome">Nome</label>
+					</div>
+		  
+					<div class="input-field col s6">
+					  <i class="material-icons prefix">perm_identity</i>
+					  <input placeholder="CPF / CNPJ" id="cpf" type="text" pattern="[0-9]+$" type="text" required maxlength="14"
+						minlength="11" class="validate">
+					  <span class="helper-text" data-error="Preenche o CPF/CNPJ corretamente"></span>
+					  <label for="cpf">CPF / CNPJ</label>
+					</div>
+				  </div>
+		  
+				  <div class="row">
+					<div class="input-field col s6">
+					  <i class="material-icons prefix">location_on</i>
+					  <input placeholder="Endereço" id="end" type="text" class="validate" name="endereco">
+					  <label for="end">Endereço</label>
+					</div>
+					<div class="input-field col s6">
+					  <i class="material-icons prefix">location_searching</i>
+					  <input placeholder="CEP" id="cep" type="text" class="validate" name="cep">
+					  <label for="cep">CEP</label>
+					</div>
+				  </div>
+		  
+				  <div class="row">
+					<div class="input-field col s6">
+					  <i class="material-icons prefix">location_city</i>
+					  <input placeholder="UF" id="uf" type="text" class="validate" name="uf">
+					  <label for="uf">UF</label>
+					</div>
+					<div class="input-field col s6">
+					  <i class="material-icons prefix">phone</i>
+					  <input placeholder="Telefone" id="telefone" type="tel" pattern="[0-9]+$" type="tel" minlength="7"
+						maxlength="11" required class="validate" name="telefone">
+					  <span class="helper-text" data-error="Preenche o telefone corretamente"></span>
+					  <label for="telefone">Telefone</label>
+					</div>
+				  </div>
+		  
+				  <div class="row">
+					<div class="input-field col s6">
+					  <i class="material-icons prefix">contact_mail</i>
+					  <input placeholder="dominio@gmail.com" id="email" type="email" required id="email-input" class="validate"
+						name="email">
+					  <span class=" helper-text" data-error="Preenche o e-mail corretamente"></span>
+					  <label for="email">Email</label>
+					</div>
+					<div class="input-field col s6">
+					  <i class="material-icons prefix">contact_mail</i>
+					  <input placeholder="Confirmar Email" id="login" type="text" class="validate">
+					  <label for="login">Confirmar Email</label>
+					</div>
+				  </div>
+		  
+				  <div class="row">
+					<div class="input-field col s6">
+					  <i class="material-icons prefix">lock_outline</i>
+					  <input placeholder="Senha" id="senha" type="password" class="validate" name="senha">
+					  <label for="senha">Senha</label>
+					</div>
+					<div class="input-field col s6">
+					  <i class="material-icons prefix">lock_outline</i>
+					  <input placeholder="Confirmar Senha" id="login" type="text" class="validate">
+					  <label for="login">Confirmar Senha</label>
+					</div>
+					<div class="row">
+						<p> </p>
+					</div>
+					<div>
+					  <button href="#" type="button" name="action" class="btn" id="enviar" value="submit"
+						onclick="validar()">Enviar
+					  </button>
+					</div>
+					<div class="row">
+						<p> </p>
+					</div>
+				  </div>
+				</form>
+		
+			
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="js/auto.js"></script>
+</body>
+</html>

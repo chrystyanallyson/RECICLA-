@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Home</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800&display=swap" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+	<link rel="stylesheet" href="css/sobre.css"/>
+</head>
+<body>
+
+    <section id="top">
+		<header>
+			<div class="navbar-fixed nav-wrapper">
+	    <nav class="row">
+	    	<div class="col s8 m3 offset-m1">
+	    		<a href="cliente-home.html"><img class="logo" src="imagens/logosvg.svg" alt=""></a>
+	    	</div>
+	    	<div class="col s3 offset-s1 m7">
+	    		<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+	    		<ul class="right hide-on-med-and-down">
+					<li><a href="cliente-home.html" class="modal-trigger">HOME</a></li>
+					<li><a href="cliente-alterar.html" class="modal-trigger">USUARIO</a></li>
+					<li><a href="cliente-sobre.html" class="modal-trigger">SOBRE</a></li>
+					<li><a href='index.html'class="waves-effect waves-light btn blue">SAIR</a></li>
+       			
+	      	</ul>
+	    	</div>
+	    </nav>
+	  </div>
+	  <ul class="sidenav" id="mobile-demo">
+        <li><a href="cliente-home.html" class="modal-trigger">HOME</a></li>
+        <li><a href="cliente-alterar.html" class="modal-trigger">USUARIO</a></li>
+		<li><a href="cliente-sobre.html" class="modal-trigger">SOBRE</a></li>
+		<li><a href='index.html'class="waves-effect waves-light btn blue">SAIR</a></li>
+  	</ul>
+		</header>
+	</section><!--/section#top-->
+	<section id="info">
+		<div class="row">
+			<div class="slider">
+				<ul class="slides">
+				  <li>
+					<img src="imagens/Reciclagem-Aluminio.jpg"> <!-- random image -->
+					<div class="caption center-align">
+					</div>
+				  </li>
+				  <li>
+					<img src="imagens/reciclagem-papel.jpg"> <!-- random image -->
+					<div class="caption left-align">
+					</div>
+				  </li>
+				  <li>
+					<img src="imagens/reciclagem-plastico.jpg"> <!-- random image -->
+					<div class="caption right-align">
+					</div>
+				  </li>
+				  <li>
+					<img src="imagens/reciclagem-vidro.jpg"> <!-- random image -->
+					<div class="caption center-align">
+					</div>
+				  </li>
+				</ul>
+			</div>
+		</div>
+		
+
+		<div class="container z-depth-1 center-align">
+			<div class="row">
+				<div class="col s12">
+					<h2>Solicitações</h2>
+					<section class="tabela">
+						<table>
+							<thead>
+								<tr class="tabela-interna">
+									<th>Codigo</th>
+									<th>Quantidade</th>
+									<th>Tipo</th>
+									<th>Valor</th>
+									<th>Total</th>
+								</tr>
+							</thead>
+			
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>3</td>
+									<td>vidro</td>
+									<td>$1,90</td>
+									<td>$1,90</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>5</td>
+									<td>Metal</td>
+									<td>$3,00</td>
+									<td>$3,00</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>10</td>
+									<td>plastico</td>
+									<td>$1,00</td>
+									<td>$1,00</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>100</td>
+									<td>Papel</td>
+									<td>$0,90</td>
+									<td>$0,90</td>
+								</tr>
+							</tbody>
+						</table>
+				</div>
+
+			</div>
+		</div>
+
+		  <div class="container">
+            <div class="row">
+				
+                <div class="col s6 z-depth-1 center-align">
+					<h2>SOLICITAR</h2>
+            <P>Preencha todos os campos para realizar sua solicitação</P>
+				  <div class="row">
+					<div class="input-field inline">
+						<select>
+						  <option value="1">Papel</option>
+						  <option value="2">Aluminio</option>
+						  <option value="3">Plastico</option>
+						  <option value="4">Vidro</option>
+						</select>
+						<label>Tipo</label>
+					  </div>
+					  <div class="input-field inline">
+						<input placeholder="Quantidade" id="Quantidade" type="text" class="validate">
+						<label for="Quantidade">Quantidade</label>
+					</div>
+				  </div>
+				  <div class="row">
+					<div class="input-field inline">
+						<input placeholder="Horário" id="Horario" type="text" class="validate">
+						<label for="Horario">Horário</label>
+					</div>
+					
+				
+				  </div>
+				  <div class="row">
+					<a class="waves-effect waves-light btn blue">SOLICITAR</a>
+				  </div>
+				</div>
+                <div class="col s6 z-depth-1 center-align ">
+					<h2>ALTERAR</h2>
+					<P>Preencha todos os campos para alterar sua solicitação</P>
+					<div class="row">
+						<div class="input-field inline">
+							<select>
+							  <option value="1">Papel</option>
+							  <option value="2">Aluminio</option>
+							  <option value="3">Plastico</option>
+							  <option value="4">Vidro</option>
+							</select>
+							<label>Tipo</label>
+						  </div>
+						  <div class="input-field inline">
+							<input placeholder="Quantidade" id="Quantidade" type="text" class="validate">
+							<label for="Quantidade">Quantidade</label>
+						</div>
+					  </div>
+					  <div class="row">
+						<div class="input-field inline">
+							<input placeholder="Horário" id="Horario" type="text" class="validate">
+							<label for="Horario">Horário</label>
+						</div>
+						<div class="input-field inline">
+							<input placeholder="Codigo" id="Cd_alterar" type="text" class="validate">
+							<label for="Cd_alterar">Codigo</label>
+						</div>
+					
+					  </div>
+					  <div class="row">
+						<a class="waves-effect waves-light btn blue">Alterar</a>
+					  </div>
+					
+					
+              	</div>
+		 	 </div>
+		  </div>
+ 
+		  <div class="container ">
+			  <div class="row">
+				<div class="col s6 z-depth-1 center-align">
+					
+						<h2>EXCLUIR</h2>
+							<p>Preencha todos os campos para Excluir sua solicitação</p>
+							<P>e para nos ajudar responda o motivo.</P>
+							<p>OBRIGADO!</p>
+						<div class="row">
+							<div class="input-field col s8 offset-s2">
+								<input placeholder="Codigo" id="Cd_excluir" type="text" class="validate">
+								<label for="Cd_excluir">Codigo</label>
+							</div>
+						</div>	   
+						<div class="row">
+							<div class="input-field col s8 offset-s2">
+								
+									<select>
+									  <option value="1">Atraso da coleta</option>
+									  <option value="2">Solicitação mal feita</option>
+									  <option value="3">Pouco Produto</option>
+									  <option value="4">Outras</option>
+									</select>
+									<label>Tipo</label>
+								  
+							</div>
+						</div>
+						<div class="row">
+							<a class="waves-effect waves-light btn blue">Excluir</a>
+						</div>
+					
+				</div>
+				<div class="col s6 z-depth-1 center-align">
+					<h2>FINANCEIRO</h2>
+						<p>SALDO</p>
+						<P>00,00</P>
+						<p>RESGATAR</p>
+					<div class="row">
+						<div class="input-field col s8 offset-s2">
+							<input placeholder="Conta" id="conta" type="text" class="validate">
+							<label for="conta">Conta</label>
+						</div>
+					</div>	   
+					<div class="row">
+						<div class="input-field col s8 offset-s2">
+							<input placeholder="Valor" id="valor" type="text" class="validate">
+							<label for="valor">Valor</label>
+						</div>
+					</div>
+					<div class="row">
+						<a class="waves-effect waves-light btn blue">RESGATAR</a>
+					</div>
+				</div>
+			</div>
+				 
+			  </div>
+			  
+		  </div>
+			
+
+	</section>
+	<section id="footer">
+
+		<footer class="page-footer blue">
+			<div class="footer-copyright">
+			  <div class="container">
+			  © 2020 CACTUS TECHNOLOGY
+			  <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+			  </div>
+			</div>
+		</footer>
+
+	</section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script>
+		$(document).ready(function(){
+    	$('.slider').slider();
+  		});
+	</script>
+    <script src="js/auto.js"></script>
+</body>
+</html>
